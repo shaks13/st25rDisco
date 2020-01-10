@@ -6,6 +6,9 @@
 *.exe
 *.o
 *.so
+*.elf
+*.ioc
+*.launch 
 
 # Packages #
 ############
@@ -20,3 +23,6 @@
 *.tar
 *.zip
 
+# folders #
+###########
+Debug/
