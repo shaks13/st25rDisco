@@ -110,15 +110,17 @@ On the physical line the following byte-stream is seen:
 	An application can use the numbers: 0x00 - 0x5F for its own commands
 
 ## command set
+
 ### low level
-ST_COM_CTRL_CMD_FW_INFORMATION  0x66  # returns zero-terminated string with information about fw e.g. chip, board */
-ST_COM_CTRL_CMD_FW_NUMBER  		0x67  # returns the 3-byte FW number */
-ST_COM_WRITE_REG 		 		0x68
-ST_COM_READ_REG 				0x69
+- ST_COM_CTRL_CMD_FW_INFORMATION  0x66  # returns zero-terminated string with information about fw e.g. chip, board */
+- ST_COM_CTRL_CMD_FW_NUMBER  		0x67  # returns the 3-byte FW number */
+- ST_COM_WRITE_REG 		 		0x68
+- ST_COM_READ_REG 				0x69
+
 ### ISO 15693 with command code 0x44
-deinitialize 	0xdf
-initialize 		0xd0
-inventory 		0xd2
+- deinitialize 	0xdf
+- initialize 		0xd0
+- inventory 		0xd2
 
 # example
 
@@ -128,18 +130,18 @@ st25r2911b-disco.ptp
 ## data exchange
 
 ### fw version 
->> 48 05 00 67 00 00 00 03 
-<< 81 08 00 67 00 00 00 03 01 02 06 
+=> 48 05 00 67 00 00 00 03 
+<= 81 08 00 67 00 00 00 03 01 02 06 
 with 
-48 05 00 : Phy header (Phy|payload|PHY status)
-67 : ST_COM_CTRL_CMD_FW_NUMBER
-00 00 : reserved and protocol staus 
-00 03 : Tx prot 
+- 48 05 00 : Phy header (Phy|payload|PHY status)
+- 67 : ST_COM_CTRL_CMD_FW_NUMBER
+- 00 00 : reserved and protocol staus 
+- 00 03 : Tx prot 
 and 
-81 08 00 :Phy header (Phy|payload|PHY status) 
-67 : ST_COM_CTRL_CMD_FW_NUMBER
-00 03 : reserved and protocol staus 
-01 02 06  : payload (version 01.02.06)
+- 81 08 00 :Phy header (Phy|payload|PHY status) 
+- 67 : ST_COM_CTRL_CMD_FW_NUMBER
+- 00 03 : reserved and protocol staus 
+- 01 02 06  : payload (version 01.02.06)
  
 # link
 https://www.st.com/en/evaluation-tools/st25r3911b-disco.html
