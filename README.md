@@ -1,11 +1,11 @@
-#overview
+# overview
 
-#harware 
+## harware 
 st25r3911b-disco
 
-#protocol
+# protocol
 
-##physical
+## physical
 On the physical line the following byte-stream is seen: 
 
     Byte 0    1        2         3         4         5         6         7      8            (8 + tx-prot) (9+tx-prot) (10+tx-prot)                
@@ -120,7 +120,7 @@ deinitialize 	0xdf
 initialize 		0xd0
 inventory 		0xd2
 
-#example
+# example
 
 ## docklight project
 st25r2911b-disco.ptp
@@ -141,7 +141,7 @@ and
 00 03 : reserved and protocol staus 
 01 02 06  : payload (version 01.02.06)
  
-#link
+# link
 https://www.st.com/en/evaluation-tools/st25r3911b-disco.html
 https://docklight.de/downloads/
 
