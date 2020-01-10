@@ -118,9 +118,12 @@ On the physical line the following byte-stream is seen:
 - ST_COM_READ_REG 				0x69
 
 ### ISO 15693 with command code 0x44
-- deinitialize 	0xdf
-- initialize 		0xd0
-- inventory 		0xd2
+- deinitialize 			0xdf ( ex: 920700 44 0002 0000 DF 00)
+- initialize 			0xd0 ( ex: 930800 44 0003 0004 D0 00 00)
+- inventory 			0xd2 ( ex: 940600 44 0001 00A1 D2)
+- readSingleBock		0xd7 ( ex: 951000 44 000b 0028 d7 00 1e156502002402e0 00)
+- writeSingleBock		0xd8
+- fastReadSingleBock	0xd9
 
 # example
 
