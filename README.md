@@ -1,7 +1,10 @@
 # overview
 
 ## harware 
-st25r3911b-disco
+st25r3911b-disco (https://www.st.com/en/evaluation-tools/st25r3911b-disco.html)
+
+##IDE
+sw4stm32 (https://www.st.com/en/development-tools/sw4stm32.html)
 
 # protocol
 
@@ -128,7 +131,7 @@ On the physical line the following byte-stream is seen:
 # example
 
 ## docklight project
-st25r2911b-disco.ptp
+st25r2911b-disco.ptp (https://docklight.de/downloads/)
 
 ## data exchange
 
@@ -146,7 +149,3 @@ and
 - 00 03 : reserved and protocol staus 
 - 01 02 06  : payload (version 01.02.06)
  
-# link
-- https://www.st.com/en/evaluation-tools/st25r3911b-disco.html
-- https://docklight.de/downloads/
-
