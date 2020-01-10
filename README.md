@@ -144,6 +144,6 @@ and
 - 01 02 06  : payload (version 01.02.06)
  
 # link
-https://www.st.com/en/evaluation-tools/st25r3911b-disco.html
-https://docklight.de/downloads/
+- https://www.st.com/en/evaluation-tools/st25r3911b-disco.html
+- https://docklight.de/downloads/
 
