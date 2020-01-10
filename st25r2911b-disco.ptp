@@ -3,7 +3,7 @@ VERSION
 
 COMMSETTINGS
 0
-COM3
+COM13
 COM2
 19200
 2
@@ -26,6 +26,41 @@ SEND
 0
 getFwNumber
 48 05 00 67 00 00 00 03
+0
+5
+
+SEND
+1
+getFwInfo
+48 05 00 66 00 00 00 40
+0
+5
+
+SEND
+2
+deinitialize
+92 07 00 44 00 02 00 00 DF 00
+0
+5
+
+SEND
+3
+initialize
+93 08 00 44 00 03 00 04 D0 00 00
+0
+5
+
+SEND
+4
+inventoty 15693
+94 06 00 44 00 01 00 A1 D2
+0
+5
+
+SEND
+5
+read one block 15693 (#0)
+95 10 00 44 00 0B 00 28 D7 00 1E 15 65 02 00 24 02 E0 00
 0
 5
 
