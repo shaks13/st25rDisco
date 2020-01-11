@@ -124,9 +124,9 @@ On the physical line the following byte-stream is seen:
 - deinitialize 			0xdf ( ex: 920700 44 0002 0000 DF 00)
 - initialize 			0xd0 ( ex: 930800 44 0003 0004 D0 00 00)
 - inventory 			0xd2 ( ex: 940600 44 0001 00A1 D2)
-- readSingleBock		0xd7 ( ex: 951000 44 000b 0028 d7 00 1e156502002402e0 00)
-- writeSingleBock		0xd8
-- fastReadSingleBock	0xd9
+- readSingleBlock		0xd7 ( ex: 951000 44 000b 0028 d7 00 1e156502002402e0 00)
+- writeSingleBlock		0xd8
+- readMultipleBlock		0xdA (ex : 961000 44 000B 0028 DA 00 1e156502002402e0 00 04)
 
 # example
 
