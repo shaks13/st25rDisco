@@ -59,8 +59,36 @@ inventoty 15693
 
 SEND
 5
+inventoty 15693 using Transceive
+94 15 00 44 00 10 02 00 59 00 03 26 01 00 00 00 00 42 00 14 B0 E0 01 FE 44
+0
+5
+
+SEND
+6
 read one block 15693 (#0)
 95 10 00 44 00 0B 00 28 D7 00 1E 15 65 02 00 24 02 E0 00
+0
+5
+
+SEND
+7
+read one block 15693 (#1)
+96 10 00 44 00 0B 00 28 D7 00 1E 15 65 02 00 24 02 E0 01
+0
+5
+
+SEND
+8
+read mlpl block 15693 (#0->3)
+97 10 00 44 00 0B 00 28 DA 00 1E 15 65 02 00 24 02 E0 00 04
+0
+5
+
+SEND
+9
+read dynamic configuration (st25dv)
+98 16 00 44 00 11 02 00 59 00 04 02 AD 02 02 00 00 00 42 00 14 B0 E0 01 FE
 0
 5
 
