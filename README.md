@@ -2,7 +2,7 @@
 
 firmware of the NFC reader st25r3911b-disco with a USB virtual com port. 
 
-## harware 
+## hardware 
 st25r3911b-disco (https://www.st.com/en/evaluation-tools/st25r3911b-disco.html)
 
 ## IDE
@@ -14,7 +14,7 @@ See [protocol.md](doc/protocol.md) for further details.
 
 # examples
 
-See in the [examples.ms](doc/examples.md).
+See in the [examples.md](doc/examples.md).
 
 # link
 - https://www.st.com/resource/en/datasheet/st25r3911b.pdf
